@@ -10,13 +10,17 @@ namespace ConsoleApp1
         }
         static void Main()
         {
-            Console.WriteLine("1 вариант");
+            Console.WriteLine("Задание А");
             for (double x = 0.08; x <= 1.08; x = x + 0.2)
             {
                 Formula(x);
             }
             Console.WriteLine();
-
+            Console.WriteLine("Задание Б");
+            double[] z = new double[5] { 0.1, 0.3, 0.4, 0.45, 0.65 };
+            for (int i = 0; i <= 4; i++)
+            {
+                formula(z[i]);
             }
             Console.ReadKey();
         }
