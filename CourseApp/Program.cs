@@ -22,7 +22,6 @@ namespace ConsoleApp1
             {
                 formula(z[i]);
             }
-            Console.WriteLine();
             Console.ReadKey();
         }
     }
