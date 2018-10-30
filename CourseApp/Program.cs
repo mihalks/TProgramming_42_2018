@@ -3,25 +3,30 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Formula(double x)
-        {
-            double y = (Math.log(Math.Abs(Math.Pow(1.1, 2) - Math.Pow(x, 2))) / Math.Pow(Math.Abs(Math.Pow(x, 2) - Math.Pow(2.0, 2)), 0.2);          
-            Console.WriteLine($"При начальном и конечном х = {x} функция y = {Math.Round(y, 4)}");
-        }
+
         static void Main()
         {
+            double[] z = new double[5] { 0.1, 0.3, 0.4, 0.45, 0.65 };
             Console.WriteLine("Задание А");
             for (double x = 0.08; x <= 1.08; x = x + 0.2)
             {
-                Formula(x);
+               Console.WriteLine(Formula(x));
             }
+
             Console.WriteLine();
             Console.WriteLine("Задание Б");
-            double[] z = new double[5] { 0.1, 0.3, 0.4, 0.45, 0.65 };
-            for (int i = 0; i <= 4; i++)
+            int i = -1;
+            foreach (int x in z)
             {
-                formula(z[i]);
+                i += 1;
+                Console.WriteLine(Formula(x));
             }
+            double Formula(double x)
+            {
+                double y = Math.Log(Math.Abs(Math.Pow(1.1, 2) - Math.Pow(x, 2))) / Math.Pow(Math.Abs(Math.Pow(x, 2) - Math.Pow(2.0, 2)), 0.2);
+                return y;
+            }
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
