@@ -10,7 +10,7 @@ namespace ConsoleApp1
             Console.WriteLine("Задание А");
             for (double x = 0.08; x <= 1.08; x = x + 0.2)
             {
-               Console.WriteLine(Formula(x));
+                Console.WriteLine(Formula(x));
             }
 
             Console.WriteLine();
@@ -21,9 +21,12 @@ namespace ConsoleApp1
                 i += 1;
                 Console.WriteLine(Formula(x));
             }
+
             double Formula(double x)
             {
-                double y = Math.Log(Math.Abs(Math.Pow(1.1, 2) - Math.Pow(x, 2))) / Math.Pow(Math.Abs(Math.Pow(x, 2) - Math.Pow(2.0, 2)), 0.2);
+                double a = 2.0;
+                double b = 1.1;
+                double y = Math.Log(Math.Abs(Math.Pow(b, a) - Math.Pow(x, 2))) / Math.Pow(Math.Abs(Math.Pow(x, 2) - Math.Pow(a, 2)), 0.2);
                 return y;
             }
             Console.WriteLine();
