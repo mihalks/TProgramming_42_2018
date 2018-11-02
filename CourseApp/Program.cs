@@ -4,7 +4,7 @@ namespace ConsoleApp1
     class Program
     {
 
-        public static void Main()
+        static void Main()
         {
             double[] z = new double[5] { 0.1, 0.3, 0.4, 0.45, 0.65 };
             Console.WriteLine("Задание А");
