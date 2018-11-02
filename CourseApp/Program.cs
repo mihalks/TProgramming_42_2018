@@ -4,7 +4,7 @@ namespace ConsoleApp1
     class Program
     {
 
-        static void Main()
+        public static void Main()
         {
             double[] z = new double[5] { 0.1, 0.3, 0.4, 0.45, 0.65 };
             Console.WriteLine("Задание А");
@@ -18,8 +18,8 @@ namespace ConsoleApp1
             int i = -1;
             foreach (int x in z)
             {
-                i += 1;
-                Console.WriteLine(Formula(x));
+                i ++;
+                Console.WriteLine(Formula(z[i]));
             }
 
             double Formula(double x)
