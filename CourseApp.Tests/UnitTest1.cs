@@ -35,11 +35,7 @@ namespace CourseApp.tests
         public void Test4()
         {
             double y = Program.function(0.0,0.0);
-<<<<<<< HEAD
             Assert.Equal(double.PositiveInfinity,y,3);
-=======
-            Assert.Equal(double.NaN,y,3);
->>>>>>> 61b0500195f1ca40be5f1dc41fe43fafa8127d1b
         }
         [Fact]
         public void test5()
