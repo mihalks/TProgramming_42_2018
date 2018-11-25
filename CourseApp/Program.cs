@@ -39,6 +39,22 @@ namespace CourseApp
             {
                 Console.WriteLine(Math.Round(function(j,b),3));
             }
+            
+            Console.WriteLine(" \nкошачье досье \n ");
+            
+            Cat Tom = new Cat();  //вызов 1-го конструктора
+            Cat Red = new Cat("Рыжик",6); //вызов 2-го конструктора 
+            Cat Begemot = new Cat("Бегемот","черный");  //вызов 3-го конструктора
+
+            Tom.GetInfo();
+            Red.GetInfo();
+            Begemot.GetInfo();
+
+            Tom.Age = 6;    //день рождения Тома
+            Console.WriteLine($"возраст Тома - {Tom.Age} лет"); //получить возраст Тома
+
+            Console.WriteLine(Tom.Meow());
+            Tom.Kotik();
         }
     }
 }
