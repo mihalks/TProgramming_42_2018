@@ -32,9 +32,9 @@ namespace CourseApp.tests
         public void Test9()
         {
             Cat Begemot = new Cat("Бегемот","черный");
-            var Name = Begemot.name;
+            var Name = Begemot.Name;
             var Age = Begemot.Age;
-            var Color = Begemot.Color();
+            var Color = Begemot.Color;
             Assert.Equal("Бегемот",Name);
             Assert.Equal(7,Age);
             Assert.Equal("черный",Color);
