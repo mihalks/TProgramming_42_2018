@@ -7,7 +7,7 @@ namespace ConsoleApp1
     {
         public int people;
         public double s { get; set; }
-    public string name { get; set; }
+        public string name { get; set; }
 
         public int People
         {

@@ -60,5 +60,44 @@ namespace CourseApp.Tests
                 i++;
             }
         }
+        [Fact]
+        public void test7()
+        {
+            Country tom = new Country();
+            var people = tom.people;
+            var s = tom.s;
+            var name = tom.name;
+
+            Assert.Equal(24140800, people);
+            Assert.Equal(7692024, s);
+            Assert.Equal("Australiya", name);
+
+        }
+        [Fact]
+        public void test8()
+        {
+            Country dom = new Country(146880432, 17125191, "Russia");
+            var people = dom.people;
+            var s = dom.s;
+            var name = dom.name;
+
+            Assert.Equal(146880432, people);
+            Assert.Equal(17125191, s);
+            Assert.Equal("Russia", name);
+
+        }
+        [Fact]
+        public void test9()
+        {
+            Country bom = new Country(30316, 12.6);
+            var people = bom.people;
+            var s = bom.s;
+            var name = bom.name;
+
+            Assert.Equal(30316, people);
+            Assert.Equal(12.6, s);
+            Assert.Equal("Kohma", name);
+
+        }
     }
 }
