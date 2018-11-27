@@ -3,6 +3,8 @@ namespace ConsoleApp1
 {
     public class Program
     {
+
+        
         public static double Formula(double x, double a, double b)
         {
 
@@ -10,7 +12,7 @@ namespace ConsoleApp1
             return y;
         }
 
-        public static void Main()
+        static void Main()
         {
             double a = 2.0;
             double b = 1.1;
@@ -31,9 +33,26 @@ namespace ConsoleApp1
                 Console.WriteLine(Formula(z[i],a,b));
             }
 
-          
             Console.WriteLine();
-            Console.ReadKey();
+
+
+            Country tom = new Country();
+            Country dom = new Country(146880432, 17125191, "Russia");
+            Country bom = new Country(30316, 12.6);
+
+
+         tom.GetInfo();
+
+        tom.People = 34140800;
+        tom.GetInfo();
+        tom.People = -1;
+        tom.GetInfo();
+        dom.GetInfo();
+        bom.GetInfo();
+        
+
+
+            Console.Read();
         }
     }
 }
