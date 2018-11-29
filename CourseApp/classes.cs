@@ -2,6 +2,7 @@ using System;
 
 namespace CourseApp
 {
+    
     public class Cat
     {
         private float age;
@@ -36,9 +37,9 @@ namespace CourseApp
             return $"кот {Name} сказал: \"Мяу!\"";
         }
         
-        public void Kotik()
+        public string Kotik()
         {
-            Console.WriteLine(@"
+            return (@"
 	
           ,.                 .,
          ,: ':.    .,.    .:' :,
@@ -77,7 +78,7 @@ namespace CourseApp
   ,'        ''','',',','','''WWWWW::::''
    ':,,,,,,,':  :  : : :  :  :WWWW'''
 ");
-
+ 
         }
     }
 }
