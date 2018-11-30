@@ -54,10 +54,8 @@ namespace CourseApp
             Tom.Age = 6;    //день рождения Тома
             Console.WriteLine($"возраст Тома - {Tom.Age} лет"); //получить возраст Тома
 
-            string Word = Tom.Meow();
-            Console.WriteLine(Word);
-            string AskiCat = Tom.Kotik();
-            Console.WriteLine(AskiCat);
+            Console.WriteLine(Tom.Meow());
+            Console.WriteLine(Tom.Kotik());
         }
 
 
