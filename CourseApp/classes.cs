@@ -34,7 +34,7 @@ namespace CourseApp
 
         public string Meow() 
         {
-            return $"кот {Name} сказал: \"Мяу!\"";
+            return $"Кот {Name} сказал: \"Мяу!\"";
         }
         
         public string Kotik()

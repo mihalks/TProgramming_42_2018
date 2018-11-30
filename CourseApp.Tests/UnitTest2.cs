@@ -45,53 +45,15 @@ namespace CourseApp.tests
             Cat Tom = new Cat();  
             var Name = Tom.Name;
             Assert.Equal("Том",Name);
-            string Word = $"Кот {Name} сказал: \'Мяу!\'";
-            Assert.Equal("Кот Том сказал: \'Мяу!\'",Word);          
+            string Word = Program.Meow( Tom );
+            Assert.Equal($"Кот Том сказал: \"Мяу!\"",Word);          
         }
-
         [Fact]
         public void Test11()
         {
-            string cat = @"
-	
-          ,.                 .,
-         ,: ':.    .,.    .:' :,
-         ,',   '.:'   ':.'   ,',
-         : '.  '         '  .' :
-         ', : '           ' : ,'
-         '.' .,:,.   .,:,. '.'
-          ,:    V '. .' V    :,
-         ,:        / '        :,
-         ,:                   :,
-          ,:       =:=       :,
-           ,: ,     :     , :,
-            :' ',.,' ',.,:' ':
-           :'      ':WW::'   '.
-          .:'       '::::'   ':
-          ,:        '::::'    :,
-          :'         ':::'    ':
-         ,:           ':''     :.
-        .:'             '.     ',.
-       ,:'               ''     '.
-       .:'               .',    ':
-      .:'               .'.,     :
-      .:                .,''     :
-      ::                .,''    ,:
-      ::              .,'','   .:'
-    .,::'.           .,','     ::::.
-  .:'     ',.       ,:,       ,WWWWW,
-  :'        :       :W:'     :WWWWWWW,          .,.
-  :         ',      WWW      WWWWWWWWW          '::,
-  '.         ',     WWW     :WWWWWWWWW            '::,
-   '.         :     WWW     :WWWWWWWW'             :::
-    '.       ,:     WWW     :WWWWWWW'             .:::
-     '.     .W:     WWW     :WWWWWW'           .,:::'
-      '.   :WW:     WWW     :WWWWW'      .,,:::::''
-     .,'   ''::     :W:     :WWWWW.  .,::::''
-  ,'        ''','',',','','''WWWWW::::''
-   ':,,,,,,,':  :  : : :  :  :WWWW'''
-";
-    Assert.Equal(@"
+            Cat Tom = new Cat();
+            string cat = Program.Kot( Tom );
+            Assert.Equal(@"
 	
           ,.                 .,
          ,: ':.    .,.    .:' :,
@@ -130,7 +92,7 @@ namespace CourseApp.tests
   ,'        ''','',',','','''WWWWW::::''
    ':,,,,,,,':  :  : : :  :  :WWWW'''
 ",cat);    
-        }              
+        }            
 
         
     }

@@ -11,8 +11,6 @@ namespace CourseApp
             return y;
         }
 
-
-
         public static void Main(string[] args)
         {
 
@@ -54,11 +52,18 @@ namespace CourseApp
             Tom.Age = 6;    //день рождения Тома
             Console.WriteLine($"возраст Тома - {Tom.Age} лет"); //получить возраст Тома
 
-            Console.WriteLine(Tom.Meow());
-            Console.WriteLine(Tom.Kotik());
+            Console.WriteLine(Meow(Tom));
+            Console.WriteLine(Kot(Tom));
         }
 
+        public static string Meow( Cat Tom )
+        {
+            return Tom.Meow();
+        }
 
-
+        public static string Kot( Cat Tom )
+        {
+            return Tom.Kotik();
+        }
     }
 }
