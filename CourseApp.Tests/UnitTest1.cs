@@ -99,5 +99,15 @@ namespace CourseApp.Tests
             Assert.Equal("Kohma", name);
 
         }
+
+        [Fact]
+        public void Test10()
+        {
+            Country bom = new Country();
+            var name = bom.name;
+            Assert.Equal("Australiya", name);
+            string Word = $"Страна {name} сказала: \'Доу!\', а мне надо поменять диллера";
+            Assert.Equal($"Страна Australiya сказала: \'Доу!\', а мне надо поменять диллера", Word);
+        }
     }
 }

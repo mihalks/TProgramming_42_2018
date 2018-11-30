@@ -53,6 +53,8 @@ namespace ConsoleApp1
 
 
             Console.Read();
+            string Word = bom.Dhou();
+            Console.WriteLine(Word);
         }
     }
 }

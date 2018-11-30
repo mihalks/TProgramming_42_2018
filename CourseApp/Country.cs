@@ -36,6 +36,10 @@ namespace ConsoleApp1
         {
             Console.WriteLine($"Население:{people} Площадь:{s}  название страны: {name}");
         }
+                public string Dhou() 
+        {
+            return $"Страна {name} сказала: \'Доу!\', а мне надо поменять диллера";
+        }
     }
 
 
