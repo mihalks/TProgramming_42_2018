@@ -106,8 +106,8 @@ namespace CourseApp.Tests
             Country bom = new Country();
             var name = bom.name;
             Assert.Equal("Australiya", name);
-            string Word = $"Страна {name} сказала: \'Доу!\', а мне надо поменять диллера";
-            Assert.Equal($"Страна Australiya сказала: \'Доу!\', а мне надо поменять диллера", Word);
+            string Word = $"Strana {name} skasala: \'Dhou!\', a mne nado pomenyat dillera";
+            Assert.Equal($"Strana Australiya skasala: \'Dhou!\', a mne nado pomenyat dillera", Word);
         }
     }
 }

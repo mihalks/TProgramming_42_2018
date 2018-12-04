@@ -38,7 +38,7 @@ namespace ConsoleApp1
         }
                 public string Dhou() 
         {
-            return $"Страна {name} сказала: \'Доу!\', а мне надо поменять диллера";
+            return $"Strana {name} skasala: \'Dhou!\', a mne nado pomenyat dillera";
         }
     }
 
