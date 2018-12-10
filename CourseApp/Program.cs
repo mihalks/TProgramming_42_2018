@@ -45,9 +45,9 @@ namespace CourseApp
             Cat Red = new Cat("Рыжик",6); //вызов 2-го конструктора 
             Cat Begemot = new Cat("Бегемот","черный");  //вызов 3-го конструктора
 
-            Tom.GetInfo();
-            Red.GetInfo();
-            Begemot.GetInfo();
+            Tom.Display();
+            Red.Display();
+            Begemot.Display();
 
             Tom.Age = 6;    //день рождения Тома
             Console.WriteLine($"возраст Тома - {Tom.Age} лет"); //получить возраст Тома
