@@ -36,24 +36,24 @@ namespace ConsoleApp1
             Console.WriteLine();
 
 
-            Country tom = new Country();
-            Country dom = new Country(146880432, 17125191, "Russia");
-            Country bom = new Country(30316, 12.6);
+            Country country1 = new Country();
+            Country country2 = new Country(146880432, 17125191, "Russia");
+            Country country3 = new Country(30316, 12.6);
 
 
-         tom.GetInfo();
+         country1.GetInfo();
 
-        tom.People = 34140800;
-        tom.GetInfo();
-        tom.People = -1;
-        tom.GetInfo();
-        dom.GetInfo();
-        bom.GetInfo();
+        country1.People = 34140800;
+        country1.GetInfo();
+        country1.People = -1;
+        country1.GetInfo();
+        country2.GetInfo();
+        country3.GetInfo();
         
 
 
             Console.Read();
-            string Word = bom.Dhou();
+            string Word = country3.Dhou();
             Console.WriteLine(Word);
         }
     }

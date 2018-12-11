@@ -6,7 +6,7 @@ namespace ConsoleApp1
     public class Country
     {
         public int people;
-        public double s { get; set; }
+        public double square { get; set; }
         public string name { get; set; }
 
         public int People
@@ -26,15 +26,15 @@ namespace ConsoleApp1
         }
 
 
-        public Country() {people = 24140800; s = 7692024; name = "Australiya"; }      
+        public Country() {people = 24140800; square = 7692024; name = "Australiya"; }      
 
-        public Country(int a, double b, string n) { people = a; s = b; name = n; }         
+        public Country(int a, double b, string n) { people = a; square = b; name = n; }         
 
-        public Country(int a, double b) { people = a; s = b; name = "Kohma"; }         
+        public Country(int a, double b) { people = a; square = b; name = "Kohma"; }         
 
         public void GetInfo()
         {
-            Console.WriteLine($"Население:{people} Площадь:{s}  название страны: {name}");
+            Console.WriteLine($"Население:{people} Площадь:{square}  название страны: {name}");
         }
                 public string Dhou() 
         {
