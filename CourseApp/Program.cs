@@ -4,6 +4,7 @@ namespace CourseApp
 {
     public class Program
     {
+<<<<<<< HEAD
         public static double function(double x, double b)
         {
             double y;
@@ -64,6 +65,12 @@ namespace CourseApp
         public static string Kot( Cat Tom )
         {
             return Tom.Kotik();
+=======
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            Console.ReadLine();
+>>>>>>> master
         }
     }
 }
