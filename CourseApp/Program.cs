@@ -4,6 +4,7 @@ namespace ConsoleApp1
     public class Program
     {
 
+
         
         public static double Formula(double x, double a, double b)
         {
@@ -54,6 +55,7 @@ namespace ConsoleApp1
             Console.Read();
             string Word = country2.Dhou();
             Console.WriteLine(Word);
-        }
+
     }
 }
+    }
