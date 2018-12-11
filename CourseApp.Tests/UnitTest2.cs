@@ -9,10 +9,10 @@ namespace CourseApp.tests
         [Fact]
         public void Test7()
         {
-            Cat Tom = new Cat();
-            var Name = Tom.Name;
-            var Age = Tom.Age;
-            var Color = Tom.Color;
+            Cat tom = new Cat();
+            var Name = tom.Name;
+            var Age = tom.Age;
+            var Color = tom.Color;
             Assert.Equal("Том",Name);
             Assert.Equal(5,Age);
             Assert.Equal("Серый",Color);
@@ -20,10 +20,10 @@ namespace CourseApp.tests
         [Fact]
         public void Test8()
         {
-            Cat Red = new Cat("Рыжик",6);
-            var Name = Red.Name;
-            var Age = Red.Age;
-            var Color = Red.Color;
+            Cat red = new Cat("Рыжик",6);
+            var Name = red.Name;
+            var Age = red.Age;
+            var Color = red.Color;
             Assert.Equal("Рыжик",Name);
             Assert.Equal(6,Age);
             Assert.Equal("рыжий",Color);
@@ -31,10 +31,10 @@ namespace CourseApp.tests
         [Fact]
         public void Test9()
         {
-            Cat Begemot = new Cat("Бегемот","черный");
-            var Name = Begemot.Name;
-            var Age = Begemot.Age;
-            var Color = Begemot.Color;
+            Cat begemot = new Cat("Бегемот","черный");
+            var Name = begemot.Name;
+            var Age = begemot.Age;
+            var Color = begemot.Color;
             Assert.Equal("Бегемот",Name);
             Assert.Equal(7,Age);
             Assert.Equal("черный",Color);
@@ -42,17 +42,17 @@ namespace CourseApp.tests
         [Fact]
         public void Test10()
         {
-            Cat Tom = new Cat();  
-            var Name = Tom.Name;
+            Cat tom = new Cat();  
+            var Name = tom.Name;
             Assert.Equal("Том",Name);
-            string Word = Program.Meow( Tom );
+            string Word = Program.Meow( tom );
             Assert.Equal($"Кот Том сказал: \"Мяу!\"",Word);          
         }
         [Fact]
         public void Test11()
         {
-            Cat Tom = new Cat();
-            string cat = Program.Kot( Tom );
+            Cat tom = new Cat();
+            string cat = Program.Kot( tom );
             Assert.Equal(@"
 	
           ,.                 .,
