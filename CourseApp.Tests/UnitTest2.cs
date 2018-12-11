@@ -14,48 +14,36 @@ namespace CourseApp.Tests
         {
             Country country1 = new Country();
             var people = country1.people;
-            var s = country1.square;
-            var name = country1.name;
+            var Square = country1.Square;
+            var Name = country1.Name;
 
             Assert.Equal(24140800, people);
-            Assert.Equal(7692024, s);
-            Assert.Equal("Australiya", name);
+            Assert.Equal(7692024, Square);
+            Assert.Equal("Australiya", Name);
 
         }
+
         [Fact]
         public void test8()
         {
-            Country country2 = new Country(146880432, 17125191, "Russia");
+            Country country2 = new Country(30316, 12.6);
             var people = country2.people;
-            var s = country2.square;
-            var name = country2.name;
-
-            Assert.Equal(146880432, people);
-            Assert.Equal(17125191, s);
-            Assert.Equal("Russia", name);
-
-        }
-        [Fact]
-        public void test9()
-        {
-            Country country3 = new Country(30316, 12.6);
-            var people = country3.people;
-            var s = country3.square;
-            var name = country3.name;
+            var Square = country2.Square;
+            var Name = country2.Name;
 
             Assert.Equal(30316, people);
-            Assert.Equal(12.6, s);
-            Assert.Equal("Kohma", name);
+            Assert.Equal(12.6, Square);
+            Assert.Equal("Kohma", Name);
 
         }
 
         [Fact]
-        public void Test10()
+        public void Test9()
         {
-            Country country3 = new Country();
-            var name = country3.name;
-            Assert.Equal("Australiya", name);
-            string Word = $"Strana {name} skasala: \'Dhou!\', a mne nado pomenyat dillera";
+            Country country2 = new Country();
+            var Name = country2.Name;
+            Assert.Equal("Australiya", Name);
+            string Word = $"Strana {Name} skasala: \'Dhou!\', a mne nado pomenyat dillera";
             Assert.Equal($"Strana Australiya skasala: \'Dhou!\', a mne nado pomenyat dillera", Word);
         }
     }

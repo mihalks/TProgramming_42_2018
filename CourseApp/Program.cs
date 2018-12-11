@@ -37,8 +37,8 @@ namespace ConsoleApp1
 
 
             Country country1 = new Country();
-            Country country2 = new Country(146880432, 17125191, "Russia");
-            Country country3 = new Country(30316, 12.6);
+
+            Country country2 = new Country(30316, 12.6);
 
 
          country1.GetInfo();
@@ -48,12 +48,11 @@ namespace ConsoleApp1
         country1.People = -1;
         country1.GetInfo();
         country2.GetInfo();
-        country3.GetInfo();
         
 
 
             Console.Read();
-            string Word = country3.Dhou();
+            string Word = country2.Dhou();
             Console.WriteLine(Word);
         }
     }
