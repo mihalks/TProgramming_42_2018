@@ -35,13 +35,12 @@ namespace ConsoleApp1
             Country country1 = new Country();
 
             Country country2 = new Country(30316, 12.6);
-         country1.GetInfo();
-
-        country1.People = 34140800;
-        country1.GetInfo();
-        country1.People = -1;
-        country1.GetInfo();
-        country2.GetInfo();
+            country1.GetInfo();
+            country1.People = 34140800;
+            country1.GetInfo();
+            country1.People = -1;
+            country1.GetInfo();
+            country2.GetInfo();
             Console.Read();
             string word = country2.Dhou();
             Console.WriteLine(word);
