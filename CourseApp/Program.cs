@@ -37,7 +37,6 @@ namespace CourseApp
                 Console.WriteLine(Math.Round(Function(j, b), 3));
             }
 
-            Console.WriteLine(" \nкошачье досье \n ");
             Cat tom = new Cat();  // вызов 1-го конструктора
             Cat red = new Cat("Рыжик", 6); // вызов 2-го конструктора
             Cat begemot = new Cat("Бегемот", "черный");  // вызов 3-го конструктора
@@ -48,19 +47,42 @@ namespace CourseApp
 
             tom.Age = 6;    // день рождения Тома
             Console.WriteLine($"возраст Тома - {tom.Age} лет"); // получить возраст Тома
+            tom.Display();
+            Console.WriteLine(tom);
 
-            Console.WriteLine(Meow(tom));
-            Console.WriteLine(Kot(tom));
+            Dog rex = new Dog();
+            Console.WriteLine(rex);
+            rex.Display();
+
+            Animal[] animal = new Animal[2];
+            animal[0] = new Dog();
+            animal[1] = new Cat();
+
+            Console.WriteLine("\nдисплей в массиве\n");
+            foreach(Animal l in animal)
+            {
+                l.Display();
+            }
+        }
+
+        public static string Gav(Dog rex)
+        {
+            return rex.Voice();
         }
 
         public static string Meow(Cat tom)
         {
-            return tom.Meow();
+            return tom.Voice();
         }
 
         public static string Kot(Cat tom )
         {
             return tom.Kotik();
+        }
+
+        public static string Pes(Dog rex)
+        {
+            return rex.Pesik();
         }
     }
 }
