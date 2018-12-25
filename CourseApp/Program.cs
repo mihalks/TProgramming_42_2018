@@ -47,12 +47,12 @@ namespace CourseApp
 
             tom.Age = 6;    // день рождения Тома
             Console.WriteLine($"возраст Тома - {tom.Age} лет"); // получить возраст Тома
-            tom.Display();
             Console.WriteLine(tom);
+            tom.Display();
 
             Dog rex = new Dog();
-            Console.WriteLine(rex);
             rex.Display();
+            Console.WriteLine(rex);
 
             Animal[] animal = new Animal[2];
             animal[0] = new Dog();

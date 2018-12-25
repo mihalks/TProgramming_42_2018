@@ -7,7 +7,7 @@ namespace CourseApp.tests
     public class UnitTest3
     {
         [Fact]
-        public void Test12()
+        public void Dog1()
         {
             Dog rex = new Dog();
             var Name = rex.Name;
@@ -21,7 +21,7 @@ namespace CourseApp.tests
         }
 
         [Fact]
-        public void test13()
+        public void Dog2()
         {
             Dog rex = new Dog();
             string Pes = Program.Pes( rex );
@@ -53,6 +53,14 @@ namespace CourseApp.tests
  %%%%%%a%%@@@%@@@@@@@@@@@00000000000000@@@@@@@@@%@@%%@%% 
 %%%aa%@@@@@@@@@@@@@@0000000000000000000000@@@@@@@@%@@@%%%% 
 %%@@@@@@@@@@@@@@@00000000000000000000000000000@@@@@@@@@%%%%%", Pes);
+        }
+
+        [Fact]
+        public void Dog3()
+        {
+            Dog rex = new Dog();
+            string ToStr = rex.ToString();
+            Assert.Equal( $"Пес Rex почесал за ухом", ToStr);
         }
     }
 }

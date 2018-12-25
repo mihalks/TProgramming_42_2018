@@ -7,7 +7,7 @@ namespace CourseApp.tests
     public class UnitTest2
     {
         [Fact]
-        public void Test7()
+        public void Cat1()
         {
             Cat tom = new Cat();
             var Name = tom.Name;
@@ -18,7 +18,7 @@ namespace CourseApp.tests
             Assert.Equal("Серый",Color);
         }
         [Fact]
-        public void Test8()
+        public void Cat2()
         {
             Cat red = new Cat("Рыжик",6);
             var Name = red.Name;
@@ -29,7 +29,7 @@ namespace CourseApp.tests
             Assert.Equal("рыжий",Color);
         }
         [Fact]
-        public void Test9()
+        public void Cat3()
         {
             Cat begemot = new Cat("Бегемот","черный");
             var Name = begemot.Name;
@@ -40,7 +40,7 @@ namespace CourseApp.tests
             Assert.Equal("черный",Color);
         }
         [Fact]
-        public void Test10()
+        public void Cat4()
         {
             Cat tom = new Cat();  
             var Name = tom.Name;
@@ -49,7 +49,7 @@ namespace CourseApp.tests
             Assert.Equal($"Кот Том сказал: \"Мяу!\"",Word);          
         }
         [Fact]
-        public void Test11()
+        public void Cat5()
         {
             Cat tom = new Cat();
             string cat = Program.Kot( tom );
@@ -94,6 +94,12 @@ namespace CourseApp.tests
 ",cat);    
         }            
 
-        
+        [Fact]
+        public void Cat6()
+        {
+            Cat tom = new Cat();
+            string ToStr = tom.ToString();
+            Assert.Equal($"Кот Том замурлыкал",ToStr);
+        }
     }
 }
