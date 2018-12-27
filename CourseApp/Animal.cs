@@ -12,9 +12,6 @@ namespace CourseApp
 
         public Animal()
         {
-            Name = "NoName";
-            Age = 0;
-            Color = "NoColor";
         }
 
         public string Name
