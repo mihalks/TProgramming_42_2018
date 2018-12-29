@@ -2,19 +2,19 @@ using System;
 using Xunit;
 using CourseApp;
 
-namespace CourseApp.tests
+namespace CourseApp.Tests
 {
-    public class UnitTest4
+    public class TestOfMassive
     {
         [Fact]
         public void Massive1()
         {
             Dog rex = new Dog();
             Cat tom = new Cat();
-            var DogVoice = rex.Voice();
-            var CatVoice = tom.Voice();
-            Assert.Equal($"Кот Том сказал: \"Мяу!\"", CatVoice);
-            Assert.Equal($"пес Rex сказал \"Гав-Гав!\"", DogVoice);
+            var dogVoice = rex.Voice();
+            var catVoice = tom.Voice();
+            Assert.Equal($"РљРѕС‚ РўРѕРј СЃРєР°Р·Р°Р»: \"РњСЏСѓ!\"", catVoice);
+            Assert.Equal($"РїРµСЃ Rex СЃРєР°Р·Р°Р» \"Р“Р°РІ-Р“Р°РІ!\"", dogVoice);
         }
     }
 }

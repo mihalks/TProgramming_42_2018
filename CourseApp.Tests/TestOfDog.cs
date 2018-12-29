@@ -2,30 +2,31 @@ using System;
 using Xunit;
 using CourseApp;
 
-namespace CourseApp.tests
+namespace CourseApp.Tests
 {
-    public class UnitTest3
+    public class TestOfDog
     {
         [Fact]
         public void Dog1()
         {
             Dog rex = new Dog();
-            var Name = rex.Name;
-            var Age = rex.Age;
-            var Color = rex.Color;
-            var Word = Program.Gav( rex );
+            var name = rex.Name;
+            var age = rex.Age;
+            var color = rex.Color;
+            var word = Program.Gav(rex );
             Assert.Equal("Rex", rex.Name);
             Assert.Equal(5, rex.Age);
             Assert.Equal("черный", rex.Color);
-            Assert.Equal($"пес {Name} сказал \"Гав-Гав!\"", Word);
+            Assert.Equal($"пес {name} сказал \"Гав-Гав!\"", word);
         }
 
         [Fact]
         public void Dog2()
         {
             Dog rex = new Dog();
-            string Pes = Program.Pes( rex );
-            Assert.Equal(@"                            ..,,,,,,,,,.. 
+            string pes = Program.Pes(rex );
+            Assert.Equal(
+            @"                            ..,,,,,,,,,.. 
                      .,;%%%%%%%%%%%%%%%%%%%%;,. 
                    %%%%%%%%%%%%%%%%%%%%////%%%%%%, .,;%%;, 
             .,;%/,%%%%%/////%%%%%%%%%%%%%%////%%%%,%%//%%%, 
@@ -52,15 +53,15 @@ namespace CourseApp.tests
     %%%%%%a%%@@@@@@@@@@000000000000000000@@@%@@%%%@%%% 
  %%%%%%a%%@@@%@@@@@@@@@@@00000000000000@@@@@@@@@%@@%%@%% 
 %%%aa%@@@@@@@@@@@@@@0000000000000000000000@@@@@@@@%@@@%%%% 
-%%@@@@@@@@@@@@@@@00000000000000000000000000000@@@@@@@@@%%%%%", Pes);
+%%@@@@@@@@@@@@@@@00000000000000000000000000000@@@@@@@@@%%%%%", pes );
         }
 
         [Fact]
         public void Dog3()
         {
             Dog rex = new Dog();
-            string ToStr = rex.ToString();
-            Assert.Equal( $"Пес Rex почесал за ухом", ToStr);
+            string toStr = rex.ToString();
+            Assert.Equal($"Пес Rex почесал за ухом", toStr );
         }
     }
 }
