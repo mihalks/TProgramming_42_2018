@@ -2,63 +2,58 @@ using System;
 using Xunit;
 using CourseApp;
 
-namespace CourseApp.Tests
+namespace CourseApp.tests
 {
-    public class TestOfCat
+    public class UnitTest2
     {
         [Fact]
-        public void Cat1()
+        public void Test7()
         {
             Cat tom = new Cat();
-            var name = tom.Name;
-            var age = tom.Age;
-            var color = tom.Color;
-            Assert.Equal("Том", name);
-            Assert.Equal(5, age);
-            Assert.Equal("Серый", color);
+            var Name = tom.Name;
+            var Age = tom.Age;
+            var Color = tom.Color;
+            Assert.Equal("Том",Name);
+            Assert.Equal(5,Age);
+            Assert.Equal("Серый",Color);
         }
-
         [Fact]
-        public void Cat2()
+        public void Test8()
         {
-            Cat red = new Cat("Рыжик", 6);
-            var name = red.Name;
-            var age = red.Age;
-            var color = red.Color;
-            Assert.Equal("Рыжик", name);
-            Assert.Equal(6, age);
-            Assert.Equal("рыжий", color);
+            Cat red = new Cat("Рыжик",6);
+            var Name = red.Name;
+            var Age = red.Age;
+            var Color = red.Color;
+            Assert.Equal("Рыжик",Name);
+            Assert.Equal(6,Age);
+            Assert.Equal("рыжий",Color);
         }
-
         [Fact]
-        public void Cat3()
+        public void Test9()
         {
-            Cat begemot = new Cat("Бегемот", "черный");
-            var name = begemot.Name;
-            var age = begemot.Age;
-            var color = begemot.Color;
-            Assert.Equal("Бегемот", name);
-            Assert.Equal(7, age);
-            Assert.Equal("черный", color);
+            Cat begemot = new Cat("Бегемот","черный");
+            var Name = begemot.Name;
+            var Age = begemot.Age;
+            var Color = begemot.Color;
+            Assert.Equal("Бегемот",Name);
+            Assert.Equal(7,Age);
+            Assert.Equal("черный",Color);
         }
-
         [Fact]
-        public void Cat4()
+        public void Test10()
         {
-            Cat tom = new Cat();
-            var name = tom.Name;
-            Assert.Equal("Том", name);
-            string word = Program.Meow(tom );
-            Assert.Equal($"Кот Том сказал: \"Мяу!\"", word);
+            Cat tom = new Cat();  
+            var Name = tom.Name;
+            Assert.Equal("Том",Name);
+            string Word = Program.Meow( tom );
+            Assert.Equal($"Кот Том сказал: \"Мяу!\"",Word);          
         }
-
         [Fact]
-        public void Cat5()
+        public void Test11()
         {
             Cat tom = new Cat();
-            string cat = Program.Kot(tom );
-            Assert.Equal(
-            @"
+            string cat = Program.Kot( tom );
+            Assert.Equal(@"
 	
           ,.                 .,
          ,: ':.    .,.    .:' :,
@@ -96,15 +91,9 @@ namespace CourseApp.Tests
      .,'   ''::     :W:     :WWWWW.  .,::::''
   ,'        ''','',',','','''WWWWW::::''
    ':,,,,,,,':  :  : : :  :  :WWWW'''
-", cat);
-        }
+",cat);    
+        }            
 
-        [Fact]
-        public void Cat6()
-        {
-            Cat tom = new Cat();
-            string toStr = tom.ToString();
-            Assert.Equal($"Кот Том замурлыкал", toStr);
-        }
+        
     }
 }

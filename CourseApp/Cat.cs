@@ -2,8 +2,10 @@ using System;
 
 namespace CourseApp
 {
-    public class Cat : Animal
+    public class Cat
     {
+        private float age;
+
         public Cat()
             : this("Том", 5)
         {
@@ -23,20 +25,32 @@ namespace CourseApp
             Color = color;
         }
 
-        public override void Display()
+        public string Name { get; set; }
+
+        public float Age
         {
-            Console.WriteLine("Животное - кот");
+            get
+            {
+                return age;
+            }
+
+            set
+            {
+                if (value > 0)
+                {
+                    this.age = value;
+                }
+            }
+        }
+
+        public string Color { get; set; }
+
+        public void Display()
+        {
             Console.WriteLine($"Имя: {Name}, Возраст: {Age} лет, окрас: {Color} ");
-            Console.WriteLine(Voice());
-            Console.WriteLine(Kotik());
         }
 
-        public override string ToString()
-        {
-            return $"Кот {Name} замурлыкал";
-        }
-
-        public override string Voice()
+        public string Meow()
         {
             return $"Кот {Name} сказал: \"Мяу!\"";
         }
