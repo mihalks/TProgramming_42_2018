@@ -16,7 +16,7 @@ namespace CourseApp.Tests
             var name = country1.Name;
 
             Assert.Equal(24140800, people);
-            Assert.Equal(7692024, square);
+            Assert.Equal(7692024, (double)square);
             Assert.Equal("Australiya", name);
         }
 
@@ -29,7 +29,7 @@ namespace CourseApp.Tests
             var name = country2.Name;
 
             Assert.Equal(30316, people);
-            Assert.Equal(12.6, square);
+            Assert.Equal(12.6, (double)square);
             Assert.Equal("Kohma", name);
         }
 

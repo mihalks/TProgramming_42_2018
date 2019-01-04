@@ -7,23 +7,24 @@ namespace ConsoleApp1
         private int people;
 
         public Country()
-            : this(24140800, 7692024, "Australiya")
+            : this(24140800, 7692024)
         {
+            Name = "Australiya";
         }
 
-        public Country(int a, double b)
+        public Country(int a, float b)
             : this(a, b, "Kohma")
         {
         }
 
-        public Country(int people, double square, string name)
+        public Country(int people, float square, string name)
         {
-            this.people = people;
-            this.Square = square;
-            this.Name = name;
+            People = people;
+            Square = square;
+            Name = name;
         }
 
-        public double Square { get; set; }
+        public float Square { get; set; }
 
         public string Name { get; set; }
 
@@ -43,14 +44,21 @@ namespace ConsoleApp1
             }
         }
 
-        public void GetInfo()
+        public override void GetInfo()
         {
-            Console.WriteLine($"Население:{people} Площадь:{Square}  название страны: {Name}");
+            Console.WriteLine("Земля - страна");
+            Console.WriteLine($"Имя: {Name}, население: {People}, площадь: {Square} ");
+            Console.WriteLine(Voice());
         }
 
-                public string Dhou()
+        public override string ToString()
         {
-            return $"Strana {Name} skasala: \'Dhou!\', a mne nado pomenyat dillera";
+            return $"Страна {Name} находится в Евразии";
+        }
+
+        public override string Voice()
+        {
+            return $"Страна {Name} сказала \'Dhou!\', погружаясь в лаву";
         }
     }
     }
