@@ -2,14 +2,13 @@ using System;
 
 namespace ConsoleApp1
 {
-    public class Country
+    public class Country : Land
     {
-        private int people;
-
         public Country()
-            : this(24140800, 7692024)
+            : base()
         {
-            Name = "Australiya";
+            People = 24140800;
+            Square = 7692024;
         }
 
         public Country(int a, float b)
@@ -24,27 +23,7 @@ namespace ConsoleApp1
             Name = name;
         }
 
-        public float Square { get; set; }
-
-        public string Name { get; set; }
-
-        public int People
-        {
-            get
-            {
-                return people;
-            }
-
-            set
-            {
-                if (value > 0)
-                {
-                    this.people = value;
-                }
-            }
-        }
-
-        public void GetInfo()
+        public override void GetInfo()
         {
             Console.WriteLine("Земля - страна");
             Console.WriteLine($"Имя: {Name}, население: {People}, площадь: {Square} ");
@@ -56,7 +35,7 @@ namespace ConsoleApp1
             return $"Страна {Name} находится в Евразии";
         }
 
-        public string Voice()
+        public override string Voice()
         {
             return $"Страна {Name} сказала \'Dhou!\', погружаясь в лаву";
         }

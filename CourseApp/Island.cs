@@ -7,9 +7,15 @@ namespace ConsoleApp1
         public Island()
             : base()
         {
-            Name = "Madagaskar";
-            People = 5;
-            Square = 90;
+            People = 24140800;
+            Square = 7692024;
+        }
+
+        public Island(int people, float square, string name)
+        {
+            People = people;
+            Square = square;
+            Name = name;
         }
 
         public override void GetInfo()

@@ -4,27 +4,16 @@ namespace ConsoleApp1
 {
     public abstract class Land
     {
-        private string name;
-
         private int people;
 
         private float square;
 
-        public string Name
+        public Land()
         {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                if (value != null)
-                {
-                    this.name = value;
-                }
-            }
+            Name = "Неизвестная земля";
         }
+
+        public string Name { get; set; }
 
         public int People
         {

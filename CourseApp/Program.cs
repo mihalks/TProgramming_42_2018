@@ -34,6 +34,7 @@ namespace ConsoleApp1
             Console.WriteLine();
             Country country1 = new Country();
             Country country2 = new Country(30316, 12);
+            Island ost = new Island(47, 5000, "Madagaskar");
 
             country1.GetInfo();
             country1.People = 34140800;
@@ -41,6 +42,7 @@ namespace ConsoleApp1
             country1.People = -1;
             country1.GetInfo();
             country2.GetInfo();
+            ost.GetInfo();
             Console.Read();
             string word = country2.Voice();
             Console.WriteLine(word);
@@ -58,14 +60,16 @@ namespace ConsoleApp1
             {
                 l.GetInfo();
             }
+
+            Console.Read();
         }
 
-        public static string Ost(Island madagaskar)
+        private static string Ost(Island madagaskar)
         {
             return madagaskar.Voice();
         }
 
-        public static string Str(Country country1)
+        private static string Str(Country country1)
         {
             return country1.Voice();
         }
