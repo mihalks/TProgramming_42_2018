@@ -44,7 +44,7 @@ namespace ConsoleApp1
             }
         }
 
-        public override void GetInfo()
+        public void GetInfo()
         {
             Console.WriteLine("Земля - страна");
             Console.WriteLine($"Имя: {Name}, население: {People}, площадь: {Square} ");
@@ -56,7 +56,7 @@ namespace ConsoleApp1
             return $"Страна {Name} находится в Евразии";
         }
 
-        public override string Voice()
+        public string Voice()
         {
             return $"Страна {Name} сказала \'Dhou!\', погружаясь в лаву";
         }
